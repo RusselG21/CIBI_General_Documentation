@@ -39,8 +39,7 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/RusselG21/CIBI_General_Documentation/edit/main/",
+          editUrl: "https://github.com/RusselG21/CIBI_General_Documentation",
         },
         blog: {
           showReadingTime: true,
@@ -50,8 +49,7 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: "https://github.com/RusselG21/CIBI_General_Documentation",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
@@ -76,13 +74,20 @@ const config: Config = {
       items: [
         {
           type: "docSidebar",
-          sidebarId: "tutorialSidebar",
+          sidebarId: "CodeDocSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "Code Docs",
         },
-        { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          type: "docSidebar",
+          to: "/docs/user-docs",
+          sidebarId: "UserDocSidebar",
+          label: "User Docs",
+          position: "left",
+        },
+        // { to: "/blog", label: "Blog", position: "left" },
+        {
+          href: "https://github.com/RusselG21/CIBI_General_Documentation",
           label: "GitHub",
           position: "right",
         },
@@ -91,15 +96,15 @@ const config: Config = {
     footer: {
       style: "dark",
       links: [
-        {
-          title: "Docs",
-          items: [
-            {
-              label: "Tutorial",
-              to: "/docs/intro",
-            },
-          ],
-        },
+        // {
+        //   title: "Docs",
+        //   items: [
+        //     {
+        //       label: "Code Docs",
+        //       to: "/docs/intro",
+        //     },
+        //   ],
+        // },
         {
           // title: "Community",
           // items: [

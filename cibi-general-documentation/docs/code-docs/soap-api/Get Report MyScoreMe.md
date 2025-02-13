@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-## GET_REPORT myScoreME
+# 🖥️ Get Report myScoreME
 
 ### Header Configuration
 
