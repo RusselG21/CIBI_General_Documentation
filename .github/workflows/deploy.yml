@@ -1,9 +1,9 @@
-name: Deploy Docusaurus to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # Change if your default branch is different
+      - main # Change if your default branch is different
 
 jobs:
   deploy:
