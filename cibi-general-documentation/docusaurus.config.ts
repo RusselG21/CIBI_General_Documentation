@@ -7,7 +7,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 const config: Config = {
   title: "C I B I",
   tagline: "Code Documentation",
-  favicon: "img/favicon.ico",
+  favicon: "img/CIBI-LOGO.png",
 
   // Set the production url of your site here
   url: "https://RusselG21.github.io",
