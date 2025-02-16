@@ -291,6 +291,53 @@ app.Use(async (context, next) =>
 });
 ```
 
+## 🚀 4️⃣ How to Implement These Headers in ASP.NET Core
+
+To apply all these headers globally, modify **Program.cs**:
+
+```csharp
+var app = builder.Build();
+
+app.Use(async (context, next) =>
+{
+    context.Response.Headers["Strict-Transport-Security"] = "max-age=31536000; includeSubDomains; preload";
+    context.Response.Headers["Content-Security-Policy"] = "default-src 'self'; script-src 'self' 'unsafe-inline'; frame-ancestors 'none';";
+    context.Response.Headers["X-Content-Type-Options"] = "nosniff";
+    context.Response.Headers["X-Frame-Options"] = "DENY";
+    context.Response.Headers["X-XSS-Protection"] = "1; mode=block";
+    context.Response.Headers["Referrer-Policy"] = "no-referrer-when-downgrade";
+    context.Response.Headers["Permissions-Policy"] = "geolocation=(), microphone=()";
+    context.Response.Headers["Expect-CT"] = "max-age=86400, enforce";
+    context.Response.Headers["Cache-Control"] = "no-store, no-cache, must-revalidate, private";
+    context.Response.Headers["Feature-Policy"] = "microphone 'none'; camera 'none'";
+    context.Response.Headers["Cross-Origin-Opener-Policy"] = "same-origin";
+    context.Response.Headers["Cross-Origin-Resource-Policy"] = "same-origin";
+    await next();
+});
+```
+
+## 🔍 Types of Secure HTTP Headers (Final Implementation)
+
+Below is the **final HTTP response header** after configuring all 11 security headers in ASP.NET Core:
+
+```
+HTTP/2 200 OK
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; frame-ancestors 'none';
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: no-referrer-when-downgrade
+Permissions-Policy: geolocation=(), microphone=()
+Expect-CT: max-age=86400, enforce
+Cache-Control: no-store, no-cache, must-revalidate, private
+Feature-Policy: microphone 'none'; camera 'none'
+Cross-Origin-Opener-Policy: same-origin
+Cross-Origin-Resource-Policy: same-origin
+```
+
 ---
 
-By implementing these security headers, you can significantly reduce the risk of common web attacks. Keep your application secure by enforcing these best practices!
+### 🎯 Conclusion
+
+Implementing secure HTTP headers significantly reduces your website's attack surface. These configurations should be applied in **production environments** to prevent common exploits and secure user data. 🚀
