@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcibi_general_documentation=self.webpackChunkcibi_general_documentation||[]).push([[903],{1912:e=>{e.exports=JSON.parse('{"blogBasePath":"/CIBI_General_Documentation/blog","blogTitle":"Blog","authorsListPath":"/CIBI_General_Documentation/blog/authors"}')}}]);

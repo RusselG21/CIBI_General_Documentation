@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcibi_general_documentation=self.webpackChunkcibi_general_documentation||[]).push([[403],{4237:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/CIBI_General_Documentation/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
