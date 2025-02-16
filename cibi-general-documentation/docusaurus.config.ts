@@ -86,6 +86,13 @@ const config: Config = {
           label: "User Docs",
           position: "left",
         },
+        {
+          type: "docSidebar",
+          to: "/docs/general-knowledge",
+          sidebarId: "GeneralKnowledgeDocSidebar",
+          label: "General Knowledge",
+          position: "left",
+        },
         // { to: "/blog", label: "Blog", position: "left" },
         {
           href: "https://github.com/RusselG21/CIBI_General_Documentation",
