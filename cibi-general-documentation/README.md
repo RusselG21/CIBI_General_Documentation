@@ -1,41 +1,25 @@
-# Website
+# Introduction 🚀
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Welcome to **CIBI GENERAL DOCUMENTATION** 🎉, a comprehensive platform for documentation. Whether you're looking for code documentation, user manuals, or general knowledge articles, this website provides well-structured and easy-to-access information for various topics.
 
-### Installation
+## Purpose 🎯
 
-```
-$ yarn
-```
+Our goal is to create a centralized hub for learning and reference materials, making it easier for users to find the information they need.
 
-### Local Development
+## Features 📚
 
-```
-$ yarn start
-```
+- **Code Documentation:** Explore technical references, API documentation, and programming guides.
+- **User Manuals:** Step-by-step instructions and guides for different software and tools.
+- **General Knowledge:** Articles and resources covering a wide range of topics.
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## Who Can Use This? 🤔
 
-### Build
+This website is designed for developers, technical writers, and general users who need structured documentation.
 
-```
-$ yarn build
-```
+## Getting Started 🚀
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+- Use the search bar 🔍 to quickly find documents.
+- Browse categories 📂 for relevant topics.
+- Refer to the help section ❓ for navigation assistance.
 
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+For any queries or feedback, feel free to reach out via our support page ✉️.
