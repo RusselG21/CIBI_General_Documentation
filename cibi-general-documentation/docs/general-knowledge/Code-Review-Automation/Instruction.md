@@ -1,3 +1,9 @@
+---
+sidebar_position: 1
+---
+
+# Implementation
+
 # Enforcing .NET 8 Coding Standards with Roslyn Analyzers and StyleCop
 
 ## Introduction
